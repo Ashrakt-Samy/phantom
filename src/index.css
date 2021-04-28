@@ -1,13 +1,228 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 !important;
+  padding: 30px 60px;
+  background-color: #202342;
+  color: aliceblue;
+}
+p {
+  margin: 0 !important;
+}
+.btn {
+  height: 40px;
+  align-items: center;
+}
+.notification {
+  border: 1px solid #2d325a;
+  border-radius: 6px;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 10px;
+  z-index: 2 !important;
+}
+.bubble {
+  width: 10px;
+  height: 10px;
+  background-color: #fe7448;
+  border-radius: 99999px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.userAvatar {
+  width: 50px;
+  height: 50px;
+}
+.userInfo > p {
+  margin: 0px !important;
+  font-size: 12px;
+}
+.userInfo {
+  margin: 0 10px;
+}
+.userEmail {
+  opacity: 0.5;
+}
+.notificationsMenu {
+  width: 320px;
+  height: 347px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 55px;
+  z-index: 2 !important;
+  background-color: #202342;
+}
+.active {
+  background: #01a9f4 !important;
+}
+.notificationContainer {
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.notificationContainer:hover {
+  background: #2d325a;
+  border-radius: 4px;
+}
+
+.notificationContainer img {
+  margin-right: 10px;
+}
+.p-title {
+  margin: 0 !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.p-email {
+  margin: 0 !important;
+  opacity: 0.5;
+}
+.p-time {
+  margin: 0 !important;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.layOut {
+  margin-top: 30px;
+}
+.card-block {
+  background-color: #2d325a;
+  border-radius: 6px;
+  height: 120px;
+  width: 100;
+  padding: 20px;
+}
+.failureNumber {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fe7448;
+}
+
+.checkoutNumber {
+  font-size: 30px;
+  font-weight: 500;
+  color: #63f4f7;
+}
+.totalImg {
+  width: 65px;
+  height: 65px;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+label [type="radio"] {
+  display: none;
+}
+
+[type="radio"] + span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #202342;
+  border-radius: 4px;
+  color: #fff;
+}
+
+[type="radio"]:checked + span {
+  display: inline-block;
+  background-color: #01a9f4;
+}
+.card-Large {
+  background-color: #2d325a;
+  height: 240px;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+}
+.mainBtn {
+  background-color: #01a9f4;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.minirBtn {
+  background-color: #323662;
+  color: #ec4165;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+.hint {
+  font-size: 12px;
+}
+.cardEntity {
+  background-color: #2d325a;
+  padding: 20px;
+  min-height: 100px;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+.cardEntity img {
+  margin-right: 10px;
+}
+.actionBtn {
+  background-color: #323662;
+  color: #1ec1c3;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.actionBtn img {
+  margin: 0 10px;
+}
+.desckTopApp {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #323662;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+.downLoadBtn {
+  color: #fff;
+  background-color: #1ec1c3;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+table,
+tr,
+th,
+td {
+  color: #fff;
+}
+
+.custom-table-header {
+  background-color: #2d325a;
+  border-radius: 6px;
+  width: 100%;
+}
+
+th,
+tbody tr:first-child td {
+  border: none !important;
+}
+
+table td {
+  border-bottom: 1px solid #fff !important;
+}
+
+th:first-child {
+  border-radius: 6px 0 0 6px !important;
+}
+
+th:last-child {
+  border-radius: 0 6px 6px 0 !important;
 }

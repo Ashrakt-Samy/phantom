@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header"
+import FilterCard from "./components/FilterCard"
+import CheckOutCard from "./components/CheckOutCard"
+import FailureCard from "./components/FailureCard"
+import LicenseCard from "./components/LicenseCard"
+import DiscordCard from "./components/DiscordCard"
+import TransferCard from "./components/TransferCard"
+import DownloadCard from "./components/DownloadCard"
+import Table from "./components/Table"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+        <Header />
+      </div>
+      <div className="row  flex-wrap layOut">
+        <div className="col-lg-8 col-12 ">
+          <div className="d-flex flex-wrap justify-content-between mb-5">
+            <FilterCard />
+            <CheckOutCard />
+            <FailureCard />
+          </div>
+
+          <Table />
+
+        </div>
+        <div className="col-lg-4 col-12">
+          <LicenseCard />
+          <DiscordCard />
+          <TransferCard />
+          <DownloadCard />
+        </div>
+
+      </div>
+
     </div>
+
   );
 }
 
